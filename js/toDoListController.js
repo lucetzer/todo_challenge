@@ -18,22 +18,6 @@ toDoList.controller('ToDoListController', [function() {
     self.list.splice(index, 1);
   }
 
-  self.completedTasks = function() {
-    self.list = self.list.filter(function(task) {
-      return task.completed;
-    });
-  }
-
-  self.incompletedTasks = function() {
-    self.list = self.list.filter(function(task) {
-      return !task.completed;
-    });
-  }
-
-  self.showAll = function() {
-    return self.list;
-  }
-
   function filterForIncomplete(task) {
     return task.completed === false;
   }
