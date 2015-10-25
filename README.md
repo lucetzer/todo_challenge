@@ -21,8 +21,15 @@ Set up
 1. Clone this repo
 2. Run ```bower install```
 3. Run ```node server.js```
-4. Run ```webdriver-manager start```
-5. Go to your localhost:8282
+4. Go to your localhost:8282
+
+Unit testing:
+* run tests with ```karma start test/karma.conf.js```
+
+Acceptance testing:
+* run ```webdriver-manager start``` and ```node server.js```
+* run tests with ```protractor test/e2e/conf.js```
+
 
 Still to do
 -----------
