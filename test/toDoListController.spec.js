@@ -40,21 +40,8 @@ describe('ToDoListController', function() {
     it('allows users to delete tasks', function() {
       ctrl.removeTask();
       expect(ctrl.list).toEqual([]);
-    })
-
-    // it('allows users to edit the task selected', function() {
-    //   ctrl.editTask();
-    //   expect(ctrl.list).toEqual(item2);
-    // });
+    });
 
   });
-
-
-
-
-  // it('will adjust the completed status to true and false', function() {
-  //   ctrl.newTask = 'buy groceries';
-  //   ctrl.addTask();
-  // });
 
 });

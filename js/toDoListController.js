@@ -4,30 +4,34 @@ toDoList.controller('ToDoListController', [function() {
   self.list = [];
 
   self.addTask = function() {
-    self.list.push({
-      name: self.newTask,
-      completed: false
-    });
+    if (self.newTask) {
+      self.list.push({
+        name: self.newTask,
+        completed: false
+      });
+    }
     console.log(self.list);
     self.newTask = "";
   }
 
-  self.removeTask = function(start) {
-    self.list.splice(start, 1);
+  self.removeTask = function(index) {
+    self.list.splice(index, 1);
   }
-
-
 
   self.completedTasks = function() {
     self.list = self.list.filter(function(task) {
-      return task.completed
+      return task.completed;
     });
   }
 
   self.incompletedTasks = function() {
     self.list = self.list.filter(function(task) {
-      return !task.completed
+      return !task.completed;
     });
+  }
+
+  self.showAll = function() {
+    return self.list;
   }
 
   function filterForIncomplete(task) {

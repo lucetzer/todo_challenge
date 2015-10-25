@@ -1,6 +1,19 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-size: 15px;
+  background-image: url(https://s-media-cache-ak0.pinimg.com/736x/30/2c/87/302c87a01b85d9791608b263a402bbd6.jpg);
+  background-size: cover;
+}
+
+h1 {
+  color: #E8E8E8;
+}
+
+.task-count {
+  color: #E8E8E8;
+  position: fixed;
+  top: 40%;
+  left: 55%;
 }
 
 .form-container {
