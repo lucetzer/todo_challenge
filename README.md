@@ -34,6 +34,5 @@ Acceptance testing:
 Still to do
 -----------
 
-* Fix up bug in count for remaining tasks
 * review testing
 * styling
