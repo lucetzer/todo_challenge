@@ -13,7 +13,11 @@ h1 {
   color: #E8E8E8;
   position: fixed;
   top: 40%;
-  left: 55%;
+  left: 53%;
+}
+
+#task-item {
+  width: 400px;
 }
 
 .form-container {
